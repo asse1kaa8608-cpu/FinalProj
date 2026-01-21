@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>MindMate — Student Well-Being Platform</title>
+
+<style>
+:root {
+  --primary: #4f46e5;
+  --secondary: #22c55e;
+  --dark: #0f172a;
+  --light: #f8fafc;
+  --gray: #94a3b8;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Inter", system-ui, sans-serif;
+}
+
+body {
+  background: linear-gradient(135deg, #eef2ff, #f8fafc);
+  color: var(--dark);
+  line-height: 1.6;
+}
+
+header {
+  padding: 80px 20px;
+  text-align: center;
+}
+
+header h1 {
+  font-size: 3rem;
+  font-weight: 800;
+  color: var(--primary);
+}
+
+header p {
+  max-width: 700px;
+  margin: 20px auto;
+  font-size: 1.2rem;
+  color: #334155;
+}
+
+button {
+  background: var(--primary);
+  color: white;
+  border: none;
+  padding: 14px 28px;
+  font-size: 1rem;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+button:hover {
+  background: #3730a3;
+}
+
+section {
+  padding: 80px 20px;
+  max-width: 1100px;
+  margin: auto;
+}
+
+.grid {
+  display: grid;
+  gap: 30px;
+}
+
+.grid-2 {
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+}
+
+.card {
+  background: white;
+  border-radius: 20px;
+  padding: 30px;
+  box-shadow: 0 20px 40px rgba(0,0,0,0.08);
+  transition: 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+.card h3 {
+  margin-bottom: 10px;
+  color: var(--primary);
+}
+
+.features li {
+  list-style: none;
+  margin: 10px 0;
+  font-size: 1.05rem;
+}
+
+.features li::before {
+  content: "✔";
+  color: var(--secondary);
+  margin-right: 10px;
+}
+
+.highlight {
+  background: linear-gradient(135deg, var(--primary), #6366f1);
+  color: white;
+  border-radius: 30px;
+}
+
+.highlight h2 {
+  font-size: 2.2rem;
+  margin-bottom: 20px;
+}
+
+.highlight p {
+  font-size: 1.1rem;
+  max-width: 800px;
+}
+
+footer {
+  text-align: center;
+  padding: 40px 20px;
+  color: var(--gray);
+  font-size: 0.9rem;
+}
+</style>
+</head>
+
+<body>
+
+<header>
+  <h1>MindMate</h1>
+  <p>A smart platform helping university students manage stress, time, and motivation — especially during exam periods.</p>
+  <button onclick="scrollToSection()">Explore the Idea</button>
+</header>
+
+<section>
+  <h2 style="text-align:center; font-size:2rem; margin-bottom:40px;">🚨 The Problem</h2>
+  <div class="grid grid-2">
+    <div class="card">
+      <h3>High Stress</h3>
+      <p>University students face constant pressure from exams, deadlines, and academic expectations.</p>
+    </div>
+    <div class="card">
+      <h3>Lack of Motivation</h3>
+      <p>Burnout and mental exhaustion reduce focus, energy, and learning efficiency.</p>
+    </div>
+  </div>
+</section>
+
+<section class="highlight">
+  <h2>💡 Our Solution</h2>
+  <p>
+    MindMate is a simple and friendly digital platform designed only for students.
+    It combines time management, stress control, and motivation into one easy system —
+    without pressure or judgment.
+  </p>
+</section>
+
+<section id="features">
+  <h2 style="text-align:center; font-size:2rem; margin-bottom:40px;">⭐ Key Features</h2>
+  <div class="grid grid-2">
+    <div class="card">
+      <h3>Smart Study Planner</h3>
+      <p>Creates realistic daily plans based on student goals and deadlines.</p>
+    </div>
+    <div class="card">
+      <h3>Stress Tracker</h3>
+      <p>Helps students understand their stress level and manage it better.</p>
+    </div>
+    <div class="card">
+      <h3>Motivation Boost</h3>
+      <p>Daily positive messages to keep students confident and focused.</p>
+    </div>
+    <div class="card">
+      <h3>Mental Health Tips</h3>
+      <p>Short, practical advice that fits into busy student life.</p>
+    </div>
+  </div>
+</section>
+
+<section>
+  <h2 style="text-align:center; font-size:2rem; margin-bottom:40px;">🎯 Target Users</h2>
+  <ul class="features" style="max-width:600px; margin:auto;">
+    <li>University students (18–25)</li>
+    <li>First-year students</li>
+    <li>International students</li>
+    <li>Students during exam periods</li>
+  </ul>
+</section>
+
+<section class="highlight">
+  <h2>🌍 Impact</h2>
+  <p>
+    In the short term, MindMate reduces stress and improves time management.
+    In the long term, it supports better mental health, academic success,
+    and a happier student life.
+  </p>
+</section>
+
+<footer>
+  <p>MindMate © 2026 — Created by Asselya & Team | Woosong University Kazakhstan</p>
+</footer>
+
+<script>
+function scrollToSection() {
+  document.getElementById("features").scrollIntoView({ behavior: "smooth" });
+}
+</script>
+
+</body>
+</html>
